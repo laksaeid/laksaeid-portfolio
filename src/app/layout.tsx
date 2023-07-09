@@ -14,11 +14,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="container mx-auto max-w-7xl bg-red-200">
-          {children}
-        </div>
+    <html className="h-screen w-screen" lang="en">
+      <body className={"bg-primary w-screen h-screen " + inter.className}>
+        <div className="mx-auto max-w-7xl text-white h-full">{children}</div>
       </body>
     </html>
   );

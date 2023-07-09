@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.translate-z-0 {
+    transform: translateZ(0px);
+  }
