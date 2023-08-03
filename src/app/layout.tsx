@@ -1,5 +1,7 @@
+import { Header } from "@/layouts";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Particles from "@/components/particles";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,9 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="h-screen w-screen" lang="en">
-      <body className={"bg-primary w-screen h-screen " + inter.className}>
-        <div className="mx-auto max-w-7xl text-white h-full">{children}</div>
+    <html className="overflow-hidden" lang="en">
+      <body className={"bg-primary " + inter.className}>
+        <div className="mx-auto max-w-7xl text-white h-full">
+        <Header />
+          {children}
+          </div>
+        <Particles/>
       </body>
     </html>
   );
