@@ -5,3 +5,17 @@
 .translate-z-0 {
     transform: translateZ(0px);
   }
+
+  body{
+    height: 100vh;
+    width: 100vw;
+  }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
