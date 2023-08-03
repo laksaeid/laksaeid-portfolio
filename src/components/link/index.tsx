@@ -4,7 +4,7 @@ interface Props{
     href:string
 }
 const MyLinks = ({text,href}:Props) => {
-    return ( <Link className="text-sm hover:border-b transition-all" href={href}>{text}</Link> );
+    return ( <Link className="text-sm transition-all" href={href}>{text}</Link> );
 }
  
 export default MyLinks;
